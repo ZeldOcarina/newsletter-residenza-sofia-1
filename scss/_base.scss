@@ -1,0 +1,35 @@
+$color-primary: #0c161f;
+$white: #fff;
+$black: #000;
+$title: #0f0f0f;
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1000px
+$bp-medium: 56.25em; // 900px, 900px/16
+$bp-small: 37.5em; // 600px, 600px/16
+$bp-smallest: 31.25em; // 500px, 500px/16
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 1rem = 10px, 10px/16px = 62,5%
+
+	@media only screen and (max-width: $bp-large) {
+		font-size: 50%;
+	}
+}
+
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
