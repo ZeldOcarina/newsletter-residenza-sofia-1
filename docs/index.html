@@ -6,159 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
-        @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
-
-        * {
-            margin: 0;
-            padding: 0
-        }
-
-        *,
-        *::before,
-        *::after {
-            -webkit-box-sizing: inherit;
-            box-sizing: inherit
-        }
-
-        html {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            font-size: 62.5%
-        }
-
-        @media only screen and (max-width: 68.75em) {
-            html {
-                font-size: 50%
-            }
-        }
-
-        body {
-            background-size: cover;
-            background-repeat: no-repeat;
-            min-height: 100vh
-        }
-
-        html {
-            font-size: 62.5%
-        }
-
-        @media only screen and (max-width: 68.75em) {
-            html {
-                font-size: 50%
-            }
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            line-height: 1.6
-        }
-
-        .bold {
-            font-weight: bold
-        }
-
-        .container {
-            width: 100%;
-            padding: 0;
-            text-align: center
-        }
-
-        .container__image {
-            width: 100vw
-        }
-
-        .container__image--image {
-            width: 50%;
-            margin: 0 auto;
-            text-align: center;
-            max-height: auto
-        }
-
-        @media only screen and (max-width: 75em) {
-            .container__image--image {
-                width: 80%
-            }
-        }
-
-        @media only screen and (max-width: 56.25em) {
-            .container__image--image {
-                width: 100%
-            }
-        }
-
-        .container__title {
-            font-family: 'Roboto', serif;
-            font-size: 3rem;
-            padding: 2rem 0;
-            color: #0f0f0f;
-            padding: 0 10%;
-            margin: 1rem 0
-        }
-
-        @media only screen and (max-width: 37.5em) {
-            .container__title {
-                font-size: 2.5rem
-            }
-        }
-
-        .container__subtitle {
-            text-align: left;
-            padding: 0 10%;
-            margin: 1rem 0;
-            font-family: 'Roboto', serif;
-            font-size: 2.5rem;
-            color: #0f0f0f;
-            text-transform: uppercase
-        }
-
-        .container__paragraph,
-        .container__btn {
-            padding: 0 10%;
-            margin: 1rem 0;
-            font-size: 2rem;
-            text-align: left
-        }
-
-        .container__btn {
-            margin: 5rem auto;
-            text-align: center;
-            width: -webkit-max-content;
-            width: -moz-max-content;
-            width: max-content
-        }
-
-        .container__btn--btn {
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            background-color: #0d4200;
-            padding: 1.5rem 2rem;
-            border-radius: 10px
-        }
-
-        .container__btn--btn:hover {
-            -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-            -webkit-transition: -webkit-box-shadow .2s;
-            transition: -webkit-box-shadow .2s;
-            transition: box-shadow .2s;
-            transition: box-shadow .2s, -webkit-box-shadow .2s
-        }
-
-        .container__btn:hover {
-            -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-            -webkit-transition: all .2s;
-            transition: all .2s
-        }
+    @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");*{margin:0;padding:0}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:62.5%}@media only screen and (max-width: 68.75em){html{font-size:50%}}body{background-size:cover;background-repeat:no-repeat;min-height:100vh}html{font-size:62.5%}body{font-family:'Lato', sans-serif;font-weight:400;line-height:1.6}.bold{font-weight:bold}.text-center{text-align:center !important}.container{width:100%;padding:0;text-align:center}.container__image{width:100vw}.container__image--image{width:50%;margin:0 auto;text-align:center;max-height:auto}@media only screen and (max-width: 75em){.container__image--image{width:80%}}@media only screen and (max-width: 56.25em){.container__image--image{width:100%}}.container__title{font-family:'Roboto', serif;font-size:3rem;padding:2rem 0;color:#0f0f0f;padding:0 10%;margin:1rem 0}@media only screen and (max-width: 37.5em){.container__title{font-size:2.5rem}}.container__subtitle{text-align:left;padding:0 10%;margin:1rem 0;font-family:'Roboto', serif;font-size:2.5rem;color:#0f0f0f;text-transform:uppercase}.container__paragraph,.container__btn{padding:0 10%;margin:1rem 0;font-size:2rem;text-align:left}.container__btn{margin:5rem auto;text-align:center;width:-webkit-max-content;width:-moz-max-content;width:max-content}.container__btn--btn{color:#fff;text-align:center;text-decoration:none;background-color:#0c161f;padding:1.5rem 2rem;border-radius:10px}.container__btn--btn:hover{-webkit-box-shadow:0 1rem 2rem rgba(0,0,0,0.2);box-shadow:0 1rem 2rem rgba(0,0,0,0.2);-webkit-transition:-webkit-box-shadow .2s;transition:-webkit-box-shadow .2s;transition:box-shadow .2s;transition:box-shadow .2s, -webkit-box-shadow .2s}.container__btn:hover{-webkit-transform:translateY(-2px);transform:translateY(-2px);-webkit-transition:all .2s;transition:all .2s}.footer{background-color:#424953;padding:2rem;margin-top:3rem}.footer__paragraph{color:#fff;font-size:2rem;font-weight:400}
     </style>
-    <!--<link rel="stylesheet" href="../style.css">-->
+    <link rel="stylesheet" href="../style.css">
     <title>Residenza Sofia - Ultime Unità Rimaste!</title>
 </head>
 
 <body>
     <div class="container">
+        <p class="container__paragraph text-center">Problemi di visualizzazione? <a href="https://zeldocarina.github.io/newsletter-residenza-sofia-1/">Clicca qui per la versione web!</a></p>
         <div class="container__image">
             <img class="container__image--image" src="./immagine-top.jpg" alt="Immagine con telecamere">
         </div>
@@ -190,9 +46,7 @@
             un sito nuovo di zecca 👩‍💻👨‍💻 per spiegarti esattamente di cosa si tratta, lo trovi
             su <a href="https://residenzasofia.casalugano.ch">https://residenzasofia.casalugano.ch</a>, mentre, se sei
             uno che è
-            alla ricerca di tutti i dettagli, puoi sempre andare su <br>
-            <a
-                href="https://casalugano.ch/residenziale/serocca-dagno-residenza-sofia">https://casalugano.ch/residenziale/serocca-dagno-residenza-sofia</a>
+            alla ricerca di tutti i dettagli, puoi sempre andare su <a href="https://casalugano.ch/residenziale/serocca-dagno-residenza-sofia">https://casalugano.ch/residenziale/serocca-dagno-residenza-sofia</a>
             dove troverai davvero tutte le informazioni di cui potresti mai avere bisogno, incluse tutte le planimetrie
             per iniziare a progettare
             il tuo nuovo arredamento! 😍.</p>
@@ -214,6 +68,15 @@
             giardini privati,
             addirittura roof garden elegantissimi e mancano davvero poche unità. Inoltre, è risaputo che alla fine della
             costruzione i prezzi tendono ad aumentare.. Il che sarebbe davvero un peccato! Contattaci subito!</p>
+            <footer>
+                <div class="footer">
+                        <p class="footer__paragraph text-center">&copy; 2019. Casa Lugano Immobiliare SA. Tutti i Diritti Riservati.</p>
+                        <p class="footer__paragraph text-center">Via Cantonale 1 - 6900, Lugano (TI)</p>
+                        <p class="footer__paragraph text-center">📞 091 945 03 32 - ✉ info@casalugano.ch</p>
+                        <p class="footer__paragraph text-center">Se non desidera pi&ugrave; ricevere le nostre comunicazioni, <unsubscribe>clicchi qui</unsubscribe> per disiscriversi dalla lista.</p>
+                </div>
+            </footer>
+            
     </div>
 </body>
 

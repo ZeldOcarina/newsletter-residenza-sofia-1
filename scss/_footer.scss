@@ -1,0 +1,11 @@
+.footer {
+	background-color: $footer-color;
+	padding: 2rem;
+	margin-top: 3rem;
+
+	&__paragraph {
+		color: $white;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+}

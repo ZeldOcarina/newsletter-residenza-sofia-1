@@ -22,9 +22,6 @@ body {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 68.75em) {
-    html {
-      font-size: 50%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -33,6 +30,9 @@ body {
 
 .bold {
   font-weight: bold; }
+
+.text-center {
+  text-align: center !important; }
 
 .container {
   width: 100%;
@@ -91,3 +91,12 @@ body {
   .container__btn:hover {
     transform: translateY(-2px);
     transition: all .2s; }
+
+.footer {
+  background-color: #424953;
+  padding: 2rem;
+  margin-top: 3rem; }
+  .footer__paragraph {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400; }
